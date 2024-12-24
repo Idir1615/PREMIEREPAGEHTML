@@ -1,0 +1,89 @@
+
+nav ul {  /* Pour mettre un pavé de couleur rouge derrière */
+    display: flex;
+    background-color: red;
+    padding: 0; /* Assurez-vous que la marge est supprimée si nécessaire */
+    margin: 0;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    border-right: 1px solid orange;
+    text-align: center;
+}
+
+nav ul li a {  /* Mettre des couleurs sur les liens */
+    text-decoration: none;
+    color: yellow;
+    display: inline-block;
+    width: 175px;
+    height: 35px;
+    padding-top: 12px;
+    border-right: 1px solid orange;
+    text-align: center;
+    transition: 0.3s;
+}
+
+nav ul li a:hover { 
+    background-color: orange;
+    color: white;
+}
+
+nav ul li ul { /* Sous-menu caché par défaut */
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover ul { /* Affiche le sous-menu au survol */
+    display: block;
+}
+
+nav ul li ul li { /* Les éléments du sous-menu en mode bloc */
+    display: block;
+}
+nav ul li a.disabled {background-color:rgb(255, 17, 17);}
+
+/* FORMULAIRE */
+form label {
+    display: inline-block;
+    width: 200px;
+}
+
+form input[type="radio"] {
+    margin-bottom: 15px; /* Correction de la syntaxe */
+}
+
+form input[type="email"], 
+form input[type="text"], /* Ajout de la virgule manquante */
+form select {
+    width: 175px;
+    margin-bottom: 15px;
+}
+
+form textarea {
+    width: 500px;
+    height: 100px;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+    background-color: rgb(91, 166, 17); 
+    border-radius: 5px;
+    color: whitesmoke;
+    margin-top: 15px;
+}
+
+form input[type="reset"] {
+    background-color: rgb(140, 31, 31);
+}
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacement entre le titre et le menu */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+}

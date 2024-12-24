@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="style.css"><!-- appel CSS--></head>
+</head>
+<body>
+    <nav>
+        <ul>
+            <!-- liste -->
+            <li>
+                <a href="index.html">Accueil</a>
+            </li>
+            <li>
+            <a href="categorie.html" class="disabled">Categorie</a>
+            </li>
+            <li>
+                <a href="compte.html">Mon compte</a>
+                <ul>
+                    <li>
+                        <a href="">Profil</a> 
+                    </li>
+                    <li>
+                        <a href="">Deconnexion</a>
+                    </li>
+
+                </ul>
+
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Page de profil</h1>
+    <form method="post">
+        <label for="pseudo">Pseudo : </label><br>
+        <input type="text" name="pseudo" value="Bassem69"> <br>
+        <label for="email">Email : </label><br>
+        <input type="email" name="email" value="bassem@fmpbf.tn"><br>
+        <label for="mdp">Mot de passe : </label><br>  
+        <input type="password" name="mdp" value="testestest"><br>
+        <label for="desc">Bio : </label><br>
+        <textarea name="desc" id="">Frère mais pas beau frère</textarea><br>
+        <input type="submit" name="submit" value="Modifier">
+    </form>
+</body>
+</html>

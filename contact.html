@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="style.css"><!-- appel CSS--></head>
+</head>
+<body>
+    <nav>
+        <ul>
+            <!-- liste -->
+            <li>
+                <a href="index.html">Accueil</a>
+            </li>
+            <li>
+            <a href="categorie.html" class="disabled">Categorie</a>
+            </li>
+            <li>
+                <a href="compte.html">Mon compte</a>
+                <ul>
+                    <li>
+                        <a href="">Profil</a> 
+                    </li>
+                    <li>
+                        <a href="">Deconnexion</a>
+                    </li>
+
+                </ul>
+
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <form method="post">
+        <!-- création d'un formulaire -->
+        <!-- choix unique -->
+        <label>
+            Civilité :
+            <input type="radio" name="civ">M.
+            <input type="radio" name="civ">Mme.
+        </label>
+        <br>
+        <label>Login :</label>
+        <input required type="text" name="login"><br>
+        <lable>Email :</label>
+        <input type="email" name="email" required placeholder="xyz@gmail.com"><br>
+        <label>Catégorie :</label>
+        <select name="categorie">
+            <!-- liste déroulante -->
+            <option value="">Problème technique</option>
+            <option value="">Problème de commpte</option>
+            <option value="">Réclamation</option>
+        </select><br>
+        Question :
+        <br>
+        <!-- zone de saisie -->
+        <textarea name="question"></textarea><br>
+        <input type="checkbox" name="cgu">
+        <!-- case à cocher-->
+        J'accepte les conditions d'utilisation<br>
+        <input type="submit" name="submit" value="Envoyer">
+        <!-- bouton de validation -->
+        <input type="reset">
+        <!-- RAZ -->
+    </form>
+
+</body>
+</html>
